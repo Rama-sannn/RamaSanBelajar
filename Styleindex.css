@@ -1,21 +1,23 @@
-/* DESIGN INDEXHTML */
+/* FIX STYLE UNTUK INDEX.HTML */
 
-body.index-design {
+html, body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #1f1c2c, #928dab);
   color: white;
   text-align: center;
-  overflow-x: hidden; /* Supaya ga scroll samping */
 }
 
+/* Logo dan Header */
 header {
   padding: 20px;
 }
 
 .logo {
   width: 100px;
-  max-width: 100%;
   height: auto;
   margin-bottom: 10px;
   display: block;
@@ -23,16 +25,19 @@ header {
   margin-right: auto;
 }
 
+/* Judul dan Deskripsi */
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   margin: 0;
 }
 
 p {
   margin-top: 5px;
   color: #ccc;
+  font-size: 1em;
 }
 
+/* Main Content: Grid Cards */
 main {
   padding: 20px;
   display: grid;
@@ -42,12 +47,13 @@ main {
   margin: auto;
 }
 
+/* Card untuk Coin */
 .coin-card {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 15px;
   border-radius: 12px;
   font-size: 1.1em;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .coin-card:hover {
@@ -55,13 +61,28 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Footer */
 footer {
   margin-top: 30px;
   padding-bottom: 20px;
 }
 
+/* Link */
 a {
-  color: #fff;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: underline;
 }
-/* DESIGN INDEX HTML */
+
+/* Responsive Fix untuk HP Kecil */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .coin-card {
+    font-size: 1em;
+  }
+}
