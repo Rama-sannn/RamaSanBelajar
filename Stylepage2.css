@@ -1,0 +1,192 @@
+    /* DESIGN PAGE2.HTML */
+    
+     body.page2-design {
+      transition: background-color 0.3s ease;
+    }
+
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    #darkModeButton {
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    #darkModeButton:hover {
+      color: #ffcc00; /* Warna saat hover */
+    }
+
+    #darkModeIcon {
+      transition: transform 0.3s ease; /* Animasi transisi */
+    }
+
+    body.dark-mode #darkModeIcon {
+      transform: rotate(180deg); /* Animasi ikon berputar */
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #3b82f6, #6366f1);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+
+    #connectButton {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #10b981;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #connectButton:hover {
+      background-color: #059669;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      animation: slideIn 1s ease-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #3b82f6;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #2563eb;
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #e5e7eb;
+      color: #6b7280;
+    }
+
+    @keyframes slideIn {
+      from {transform: translateY(-30px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+      background: #1e293b;
+      color: #f9fafb;
+    }
+
+    body.dark-mode header {
+      background: linear-gradient(to right, #0f172a, #1e3a8a);
+      color: #f9fafb;
+    }
+
+    body.dark-mode .card {
+      background: #334155;
+      color: #f9fafb;
+    }
+
+    body.dark-mode footer {
+      background: #0f172a;
+      color: #94a3b8;
+    }
+
+    body.dark-mode .faq-item {
+      background-color: #475569;
+      color: #f9fafb;
+      border-color: #64748b;
+    }
+
+    body.dark-mode h2,
+    body.dark-mode h3,
+    body.dark-mode p {
+      color: #f9fafb;
+    }
+
+    .faq-item {
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      background-color: #fff;
+    }
+
+    .faq-item h3 {
+      margin: 0;
+    }
+
+    .faq-item p {
+      margin-top: 10px;
+      display: none;
+    }
+
+    .faq-item.active p {
+      display: block;
+    }
+    /* DESIGN PAGE2.HTML */

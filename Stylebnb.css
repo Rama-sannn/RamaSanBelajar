@@ -1,0 +1,59 @@
+/* design penjelasan bnb */
+body.bnb-design {  
+  margin: 0;  
+  font-family: 'Poppins', sans-serif;  
+  background: linear-gradient(135deg, #1f1c2c, #928dab);  
+  color: white;  
+  text-align: center;  
+}  
+  
+header {  
+  padding: 20px;  
+}  
+  
+.logo {  
+  width: 100px;  
+  margin-bottom: 10px;  
+}  
+  
+h1 {  
+  font-size: 2em;  
+  margin: 0;  
+}  
+  
+p {  
+  margin-top: 5px;  
+  color: #ccc;  
+}  
+  
+main {  
+  padding: 20px;  
+  display: grid;  
+  gap: 15px;  
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+  max-width: 1000px;  
+  margin: auto;  
+}  
+  
+.coin-card {  
+  background-color: rgba(255, 255, 255, 0.1);  
+  padding: 15px;  
+  border-radius: 12px;  
+  font-size: 1.1em;  
+  transition: transform 0.2s;  
+}  
+  
+.coin-card:hover {  
+  transform: scale(1.05);  
+  background-color: rgba(255, 255, 255, 0.2);  
+}  
+  
+footer {  
+  margin-top: 30px;  
+  padding-bottom: 20px;  
+}  
+  
+a {  
+  color: #fff;  
+  text-decoration: underline;  
+}
