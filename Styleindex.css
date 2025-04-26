@@ -1,61 +1,54 @@
-/* FIX STYLE UNTUK INDEX.HTML */
-
-/* Reset dan setting dasar */
-html, body {
+body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  background: linear-gradient(135deg, #1f1f2e, #3a3a5a);
   color: white;
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Header dan Logo */
 header {
-  padding: 20px;
+  text-align: center;
+  margin: 30px 0;
 }
 
-.logo {
+header img {
   width: 100px;
-  height: auto;
-  margin: 0 auto 10px auto;
-  display: block;
+  height: 100px;
 }
 
-/* Judul dan Deskripsi */
-h1 {
-  font-size: 2.2em;
-  margin: 0;
+header h1 {
+  margin-top: 10px;
+  font-size: 2.5em;
 }
 
-p {
+header p {
   margin-top: 5px;
-  color: #ccc;
-  font-size: 1em;
+  font-size: 1.2em;
+  color: #cccccc;
 }
 
-/* Main Content: Lurus ke bawah */
 main {
   padding: 20px;
   display: flex;
-  flex-direction: column; /* Ini bikin lurus ke bawah */
+  flex-direction: column;
   gap: 15px;
-  max-width: 500px; /* Biar pas di desktop */
+  max-width: 600px; /* Lebar maksimal card */
+  width: 100%; /* Biar responsive */
   margin: auto;
-  align-items: center; /* Tengahin semua item */
 }
 
-/* Card Coin */
 .coin-card {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px;
+  padding: 20px;
   border-radius: 12px;
-  font-size: 1.1em;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  width: 100%; /* Biar full */
+  font-size: 1.2em;
+  transition: transform 0.2s, background-color 0.2s;
   text-align: center;
+  width: 100%;
 }
 
 .coin-card:hover {
@@ -63,29 +56,19 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Footer */
 footer {
-  margin-top: 30px;
-  padding-bottom: 20px;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 1em;
+  color: #cccccc;
 }
 
-/* Link Style */
 a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-/* Responsive untuk HP Kecil */
-@media (max-width: 400px) {
-  h1 {
-    font-size: 1.8em;
-  }
-  .coin-card {
-    font-size: 1em;
-  }
 }
