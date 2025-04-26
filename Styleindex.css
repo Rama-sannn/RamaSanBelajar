@@ -1,61 +1,67 @@
 /* DESIGN INDEXHTML */
 
 body.index-design {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      color: white;
-      text-align: center;
-    }
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  text-align: center;
+  overflow-x: hidden; /* Supaya ga scroll samping */
+}
 
-    header {
-      padding: 20px;
-    }
+header {
+  padding: 20px;
+}
 
-    .logo {
-      width: 100px;
-      margin-bottom: 10px;
-    }
+.logo {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    h1 {
-      font-size: 2em;
-      margin: 0;
-    }
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
 
-    p {
-      margin-top: 5px;
-      color: #ccc;
-    }
+p {
+  margin-top: 5px;
+  color: #ccc;
+}
 
-    main {
-      padding: 20px;
-      display: grid;
-      gap: 15px;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      max-width: 1000px;
-      margin: auto;
-    }
+main {
+  padding: 20px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1000px;
+  margin: auto;
+}
 
-    .coin-card {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 15px;
-      border-radius: 12px;
-      font-size: 1.1em;
-      transition: transform 0.2s;
-    }
+.coin-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 1.1em;
+  transition: transform 0.2s;
+}
 
-    .coin-card:hover {
-      transform: scale(1.05);
-      background-color: rgba(255, 255, 255, 0.2);
-    }
+.coin-card:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
-    footer {
-      margin-top: 30px;
-      padding-bottom: 20px;
-    }
+footer {
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
 
-    a {
-      color: #fff;
-      text-decoration: underline;
-    }
-    /* DESIGN INDEX HTML */
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+/* DESIGN INDEX HTML */
