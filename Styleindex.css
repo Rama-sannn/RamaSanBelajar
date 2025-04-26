@@ -1,5 +1,6 @@
 /* FIX STYLE UNTUK INDEX.HTML */
 
+/* Reset dan setting dasar */
 html, body {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ html, body {
   text-align: center;
 }
 
-/* Logo dan Header */
+/* Header dan Logo */
 header {
   padding: 20px;
 }
@@ -19,10 +20,8 @@ header {
 .logo {
   width: 100px;
   height: auto;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Judul dan Deskripsi */
@@ -37,27 +36,30 @@ p {
   font-size: 1em;
 }
 
-/* Main Content: Grid Cards */
+/* Main Content: Lurus ke bawah */
 main {
   padding: 20px;
-  display: flex; /* Ubah dari grid jadi flex */
-  flex-direction: column; /* Biar lurus kebawah */
+  display: flex;
+  flex-direction: column; /* Ini bikin lurus ke bawah */
   gap: 15px;
-  max-width: 600px; /* Biar lebih rapih, kasih batas lebar */
+  max-width: 500px; /* Biar pas di desktop */
   margin: auto;
+  align-items: center; /* Tengahin semua item */
 }
 
-/* Card untuk Coin */
+/* Card Coin */
 .coin-card {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 15px;
   border-radius: 12px;
   font-size: 1.1em;
-  transition: transform 0.2s, background-color 0.2s;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  width: 100%; /* Biar full */
+  text-align: center;
 }
 
 .coin-card:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -67,17 +69,18 @@ footer {
   padding-bottom: 20px;
 }
 
-/* Link */
+/* Link Style */
 a {
   color: #ffffff;
   text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Fix untuk HP Kecil */
+/* Responsive untuk HP Kecil */
 @media (max-width: 400px) {
   h1 {
     font-size: 1.8em;
